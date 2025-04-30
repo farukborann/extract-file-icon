@@ -21,7 +21,7 @@
   },
   "scripts": {
     "install": "npm run rebuild",
-    "rebuild": "node-gyp rebuild",
+    "rebuild": "npm run build && node-gyp rebuild",
     "build": "tsc -p .",
     "watch": "tsc --watch -p .",
     "prepublishOnly": "npm run build && npm run rebuild"
