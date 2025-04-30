@@ -21,9 +21,10 @@
   },
   "scripts": {
     "install": "npm run rebuild",
-    "rebuild": "npm run build && node-gyp rebuild",
+    "rebuild": "node-gyp rebuild",
     "build": "tsc -p .",
-    "watch": "tsc --watch -p ."
+    "watch": "tsc --watch -p .",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "node-addon-api": "2.0.0"
