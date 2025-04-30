@@ -23,8 +23,7 @@
     "install": "npm run rebuild",
     "rebuild": "npm run build && node-gyp rebuild",
     "build": "tsc -p .",
-    "watch": "tsc --watch -p .",
-    "prepublishOnly": "npm run build && npm run rebuild"
+    "watch": "tsc --watch -p ."
   },
   "dependencies": {
     "node-addon-api": "2.0.0"
